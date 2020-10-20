@@ -1,0 +1,27 @@
+#nav {
+    background: #000;
+    width: 100%;
+    height: 50px;
+  }
+  p,li {
+    display: flex;
+    color: #fff;
+    margin-top:15px;
+  }
+  p {
+    float: left;
+    margin-left: 5%;
+  }
+  ul {
+    float: right;
+    margin-right: 5%;
+  }
+  li {
+    float: left;
+  }
+  .line {
+    margin:15px 20px;
+  }
+  a {
+    color:#fff;
+  }
