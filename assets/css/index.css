@@ -1,7 +1,7 @@
 /* body {
   background: #5C5C5C;
 } */
-#nav {
+  #nav {
     background: #000;
     width: 100%;
     height: 50px;
@@ -62,25 +62,33 @@
   /* #moduleOuter {
     background: rgb(255,255,255,0.9);
   } */
+  #moduleOuter {
+    margin: 0 auto;
+
+  }
   #moduleBar {
-    background-image: url("../images/moduleImg.jpg");
-    background-repeat: no-repeat;
-    width: 1189px;
+    background: url("../images/moduleImg.jpg") no-repeat center center;  /*增加垂直效果*/
+    /*width: 1189px;*/
+    width: 96%;
     height: 510px;
     margin: 0 auto;
     padding-top:80px;
   }
   #moduleBar ul {
-    margin-left: 250px;
+    /*margin-left: 250px;*/
+    display: flex;
+    justify-content: center;
   }
   #moduleBar li{
-    float: left;
-    margin-right: 80px;
+    /*float: left;*/
+    /*margin-right: 80px;*/
+    margin-left: 45px;
+    margin-right: 45px;
   }
   .link {
     width: 180px;
     height: 200px;
-    background: rgb(255,255,255,0.2);
+    background: rgba(255,255,255,0.2);
     margin-top: 40px;
     padding-top: 60px;
     text-align: center;
@@ -103,9 +111,29 @@
     background: #077AAB;
     margin-top: 10px;
     transition-duration: 1s;
+    /*浏览器兼容？？*/
   }
   .link:hover p {
     display: block;
     transition-delay: 1s;
     margin: 15px auto;
+  }
+
+  /*test*/
+  #showImg {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
   }
