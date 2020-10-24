@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后起之秀新闻列表</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/personList.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+  <div id="list">
+    <div id="nav">
+      <p>网站名字</p>
+      <ul>
+        <li>
+          <a href="../index.html">首页</a>
+        </li>
+        <li>
+          <a href="./personList.html" id="navSelect">后起之秀</a>
+        </li>
+        <li>
+          <a href="">第二个内容</a>
+        </li>
+        <li>
+          <a href="">第三个内容</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</body>
+
+<!--element-ui的相关引入内容-->
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#list',
+    data() {
+      return {
+        activeIndex: '1',
+        activeIndex2: '1'
+      };
+    },
+    methods: {
+      handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    }
+  })
+</script>
+
+</html>
