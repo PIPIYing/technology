@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<<<<<<< Updated upstream
   <div id="nav">
     <p>网站名字</p>
     <ul>
@@ -73,6 +74,81 @@
             </a>
           </li>
         </ul>
+=======
+  <div id="index">
+    <div id="nav">
+      <p>网站名字</p>
+      <ul>
+        <li>
+          <a href="./index.html" id="navSelect">首页</a>
+        </li>
+        <li>
+          <a href="./person/personList.html">后起之秀</a>
+        </li>
+        <li>
+          <a href="">第二个内容</a>
+        </li>
+        <li>
+          <a href="">第三个内容</a>
+        </li>
+      </ul>
+    </div>
+    <div id="indexImg">
+      <img src="./assets/images/indexImg.jpg" alt="indexImg">
+    </div>
+    <div id="intro">
+      <h5>网站简介</h5>
+      <h6>About Site</h6>
+      <img src="./assets/images/introImg.jpg" alt="introImg">
+      <p>一点网站介绍</p>
+    </div>
+    <div id="module">
+      <h5>模块介绍</h5>
+      <h6>About Module</h6>
+      <div id="moduleOuter">
+        <div id="moduleBar">
+          <ul>
+            <li class="person">
+              <a href="">
+                <div class="link">
+                  <img src="./assets/images/indexPerson.png" alt="">
+                  <br>后起之秀
+                  <p>简介简洁！！！</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="link">
+                  <img src="./assets/images/indexResult.png" alt="">
+                  <br>科技成果
+                  <p>hhhhhhhhh</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="link">
+                  <img src="./assets/images/indexInherit.png" alt="">
+                  <br>科技传承
+                  <p>hhhhhhhhh</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="test">
+      <h5>图片展示</h5>
+      <h6>About Picture</h6>
+      <div id="showImg">
+        <el-carousel :interval="4000" type="card" height="200px">
+          <el-carousel-item v-for="item in 6" :key="item">
+            <h3 class="medium">{{ item }}</h3>
+          </el-carousel-item>
+        </el-carousel>
+>>>>>>> Stashed changes
       </div>
     </div>
     
