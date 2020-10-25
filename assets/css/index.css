@@ -73,6 +73,7 @@
 }
 #nav a:hover {
   background: #000;
+  transition-duration: 0.5s;
 }
 >>>>>>> Stashed changes
   #indexImg img {
