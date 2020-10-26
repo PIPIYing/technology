@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>传承文化新闻列表</title>
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/historyList.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+  <div id="historyList">
+    <div id="nav">
+      <p>网站名字</p>
+      <ul>
+        <li>
+          <a href="../index.html">首页</a>
+        </li>
+        <li>
+          <a href="./personList.html">后起之秀</a>
+        </li>
+        <li>
+          <a href="">第二个内容</a>
+        </li>
+        <li>
+          <a href="./historyList.html" id="navSelect">第三个内容</a>
+        </li>
+      </ul>
+    </div>
+    <div id="headImg">
+      <img src="../assets/images/historyHead.jpg" alt="">
+    </div>
+    <div id="boxList">
+      <ul>
+        <li class="blueBackground">
+          <a href="" class="shortList">
+            <h5>一段标题</h5>
+            <p>简介</p>
+          </a>
+        </li>
+        <li class="whiteBackground">
+          <a href="" class="shortList">
+            <h5>一段标题</h5>
+            <p>简介aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          </a>
+        </li>
+        <li class="blueBackground">
+          <a href="" class="shortList">
+            <h5>一段标题</h5>
+            <p>简介</p>
+          </a>
+        </li>
+        <li class="whiteBackground">
+          <a href="" class="shortList">
+            <h5>一段标题</h5>
+            <p>简介</p>
+          </a>
+        </li>
+        <li class="whiteBackground">
+          <a href="" class="shortList">
+            <h5>一段标题</h5>
+            <p>简介</p>
+          </a>
+        </li>
+        <li class="blueBackground">
+          <a href="" class="shortList">
+            <h5>一段标题</h5>
+            <p>简介</p>
+          </a>
+        </li>
+        <li id="longList">
+          <h6>更多新闻</h6>
+          <ul>
+            <li>
+              <a href="">
+                <i class="el-icon-chat-dot-square"></i>一段新闻标题aaaa
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="el-icon-chat-dot-square"></i>一段新闻标题
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="el-icon-chat-dot-square"></i>一段新闻标题
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="el-icon-chat-dot-square"></i>一段新闻标题
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="el-icon-chat-dot-square"></i>一段新闻标题
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="el-icon-chat-dot-square"></i>一段新闻标题
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#historyList',
+    data() {
+      return {
+        activities: [{
+          content: '一条新闻',
+          timestamp: '2018-04-03 20:46',
+          color: '#045E8A'
+        }]
+      };
+    }
+  })
+</script>
+
+</html>
