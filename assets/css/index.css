@@ -137,7 +137,6 @@
     transition-delay: 1s;
     margin: 15px auto;
   }
-
   /*test*/
   #showImg {
     width: 75%;
@@ -155,4 +154,18 @@
   }
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
+  }
+  #backTop a{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #077AAB;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
   }
