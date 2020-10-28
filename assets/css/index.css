@@ -157,3 +157,39 @@
     transition-delay: 1s;
     margin: 15px auto;
   }
+<<<<<<< Updated upstream
+=======
+
+  /*test*/
+  #showImg {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
+  #backTop a{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #077AAB;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+>>>>>>> Stashed changes
