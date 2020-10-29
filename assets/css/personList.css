@@ -2,27 +2,31 @@
   background: #3E444A;
   width: 100%;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 #nav p,#nav li {
-  display: flex;
   color: #fff;
 }
 #nav p {
-  float: left;
+  /*float: left;*/
   margin-left: 5%;
   width: 80px;
+  min-width: 80px;  /*防止因页面变小文字溢出*/
   height: 50px;
   line-height: 50px;
 }
 #nav ul {
-  float: right;
+  /*float: right;*/
+  width: 520px;
+  min-width: 520px;  /*防止因页面变小文字溢出*/
   margin-right: 5%;
 }
 #nav li {
   float: left;
 }
 #nav a {
-  color:#fff;
+  color: #fff;
   width: 130px;
   height: 50px;
   display: block;
@@ -61,16 +65,16 @@
 }
 /*flex的item布局*/
 #hotNewsList {
-  flex-grow: 5;
+  flex-grow: 1;
 }
 #headline a{
-  width: 40%;
+  width: 75%;
   height: 500px;
   border-radius: 5%;
-  display: flex;
+  /*display: flex;*/
   float: left;
   background-image: url("../images/flower.jpg");
-  margin-left: 5%;
+  margin-left: 8%;
   margin-right: 80px;
   overflow: hidden;
   position: relative;
@@ -90,7 +94,7 @@
   left: 30px;
 }
 #hotNewsList {
-  width: 40%;
+  width: 25%;
   height: 500px;
   /*float: left;*/
 }

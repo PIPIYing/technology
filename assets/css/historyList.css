@@ -1,106 +1,110 @@
 #nav {
-    background: #3E444A;
-    width: 100%;
-    height: 50px;
-  }
-  #nav p,#nav li {
-    display: flex;
-    color: #fff;
-  }
-  #nav p {
-    float: left;
-    margin-left: 5%;
-    width: 80px;
-    height: 50px;
-    line-height: 50px;
-  }
-  #nav ul {
-    float: right;
-    margin-right: 5%;
-  }
-  #nav li {
-    float: left;
-  }
-  #nav a {
-    color:#fff;
-    width: 130px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-  }
-  #nav #navSelect {
-    color: #0080FF;
-  }
-  #nav #navSelect:after {
-    content: '';
-    width: 130px;
-    height: 3px;
-    background: #0080FF;
-    display: flex;
-    margin-top: -3px;
-  }
-  #nav a:hover {
-    background: #000;
-    transition-duration: 0.5s;
-  }
-  #headImg img {
-    width: 100%;
-  }
-  #boxList {
-    width: 1200px;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: -3px;
-    position: relative;
-  }
-  #boxList .shortList {
-    width: 300px;
-    height: 300px;
-    display: block;
-    float: left;
-    position: relative;
-    z-index: 1;
-  }
-  #boxList h5 {
-    margin: 20px;
-    font-size: 20px;
-    word-break:break-all;
-  }
-  #boxList p {
-    margin: 15px;
-    text-indent:2em;
-    word-break:break-all;
-  }
-  .blueBackground a{
-    background: #045E8A;
-    color: #fff;
-  }
-  .whiteBackground a{
-    background: #fff;
-    color: #045E8A;
-  }
-  #boxList .shortList:hover {
-    box-shadow:0 0 10px rgba(0,0,0,1);
-    z-index: 9;
-  }
-  #longList {
-    float: left;
-    width: 600px;
-    height: 300px;
-    background: #F3F3F3;
-  }
-  #longList h6{
-    margin: 20px;
-    color: #045E8A;
-    font-size: 20px;
-  }
-  #longList a {
-    display: flex;
-    margin: 20px 40px 20px 60px;
-    font-size: 16px;
-  }
-  #longList a:hover {
-    color: #045E8A;
-  }
+  background: #3E444A;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#nav p,#nav li {
+  color: #fff;
+}
+#nav p {
+  /*float: left;*/
+  margin-left: 5%;
+  width: 80px;
+  min-width: 80px;  /*防止因页面变小文字溢出*/
+  height: 50px;
+  line-height: 50px;
+}
+#nav ul {
+  /*float: right;*/
+  width: 520px;
+  min-width: 520px;  /*防止因页面变小文字溢出*/
+  margin-right: 5%;
+}
+#nav li {
+  float: left;
+}
+#nav a {
+  color: #fff;
+  width: 130px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+}
+#nav #navSelect {
+  color: #0080FF;
+}
+#nav #navSelect:after {
+  content: '';
+  width: 130px;
+  height: 3px;
+  background: #0080FF;
+  display: flex;
+  margin-top: -3px;
+}
+#nav a:hover {
+  background: #000;
+  transition-duration: 0.5s;
+}
+#headImg img {
+  width: 100%;
+}
+#boxList {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: -3px;
+  position: relative;
+}
+#boxList .shortList {
+  width: 300px;
+  height: 300px;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+#boxList h5 {
+  margin: 20px;
+  font-size: 20px;
+  word-break:break-all;
+}
+#boxList p {
+  margin: 15px;
+  text-indent:2em;
+  word-break:break-all;
+}
+.blueBackground a{
+  background: #045E8A;
+  color: #fff;
+}
+.whiteBackground a{
+  background: #fff;
+  color: #045E8A;
+}
+#boxList .shortList:hover {
+  box-shadow:0 0 10px rgba(0,0,0,1);
+  z-index: 9;
+}
+#longList {
+  float: left;
+  width: 600px;
+  height: 300px;
+  background: #F3F3F3;
+}
+#longList h6{
+  margin: 20px;
+  color: #045E8A;
+  font-size: 20px;
+}
+#longList a {
+  display: flex;
+  margin: 20px 40px 20px 60px;
+  font-size: 16px;
+}
+#longList a:hover {
+  color: #045E8A;
+}
 
