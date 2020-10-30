@@ -11,10 +11,12 @@
 #nav p {
   /*float: left;*/
   margin-left: 5%;
-  width: 80px;
-  min-width: 80px;  /*防止因页面变小文字溢出*/
-  height: 50px;
-  line-height: 50px;
+  width: 140px;
+  min-width: 140px;  /*防止因页面变小文字溢出*/
+  height: 55px;
+  font-family: STXingkai;  /*标题字体*/
+  font-size: 33px;
+  line-height: 55px;
 }
 #nav ul {
   /*float: right;*/
