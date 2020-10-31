@@ -254,6 +254,9 @@ body a {
   line-height: 34px;
   border-bottom: 1px solid #f0f0f0;
   margin-left: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #epContentRight a:hover {
   color: brown;
