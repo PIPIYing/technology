@@ -120,7 +120,7 @@ h1 {
   background: #fff;
 }
 .w960 {
-  width: 960px;
+  width: 1060px;
   margin: 0 auto;
 }
 .pt20 {
@@ -130,7 +130,7 @@ h1 {
   position: relative;
 }
 .w600 {
-  width: 600px;
+  width: 700px;
 }
 .clearfix {
   zoom: 1;
@@ -165,6 +165,9 @@ p {
 }
 .tag p {
   height: 33.5px;
+}
+.contentbox h1 {
+  line-height: 36px;
 }
 .artical-con p {
   font-size: 18px;
