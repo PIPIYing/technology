@@ -73,7 +73,9 @@
   border-radius: 5%;
   /*display: flex;*/
   float: left;
-  background-image: url("../images/flower.jpg");
+  background-image: url("../images/person/person1_1.jpg");
+  background-size: 100%;
+  background-position: 0 15%;
   margin-left: 8%;
   margin-right: 80px;
   overflow: hidden;
@@ -85,13 +87,13 @@
   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
   position: relative;
   top: 380px;
+  padding: 0 10px;
 }
 #headline p {
   color: #fff;
   font-size: 25px;
   position: relative;
   top: 60px;
-  left: 30px;
 }
 #hotNewsList {
   width: 25%;
@@ -140,7 +142,6 @@
 }
 #newsList h6 {
   width: 80%;
-  height: 18px;
   margin: 10px auto;
   text-align: center;
   color: #000;
@@ -155,3 +156,4 @@
 #newsList li:hover {
   box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
+

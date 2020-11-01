@@ -1,6 +1,4 @@
-
-  
-  html, body {
+    html, body {
     width: 100%;
   }
   div {
@@ -254,3 +252,51 @@
     background: #000;
     transition-duration: 0.5s;
   }
+
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+.post_content_side {
+  width: 300px;
+}
+.ep-title-2 {
+  background: #fafafa;
+  margin-top: 10px;
+  height: 35px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+  line-height: 31px;
+  overflow: hidden;
+}
+.ep-title-2 .title {
+  float: left;
+  color: #252525;
+  font: 700 14px/36px Sim sun;
+}
+.entry a {
+  float: right;
+  padding-right: 15px;
+  line-height: 36px;
+  color: #888888;
+  font-size: 12px;
+  font-family: "\5B8B\4F53",serif;
+  cursor: pointer;
+}
+.rightlist li {
+  height: 35px;
+  font-size: 14px;
+  line-height: 34px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-left: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#epContentRight a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
