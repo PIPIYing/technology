@@ -62,9 +62,9 @@ background: #5C5C5C;
   width: 100%;
 }
 #intro {
-  width: 500px;
+  width: 700px;
   height: 400px;
-  margin: 90px auto 0 auto;
+  margin: 90px auto 60px auto;
 }
 h5 {
   text-align: center;
@@ -77,17 +77,19 @@ h6 {
   font-size: 14px;
 }
 #intro img {
-  width: 280px;
+  width: 360px;
   float: left;
   box-shadow: 1px 1px 20px;
 }
 #intro p {
-  height: 150px;
-  width: 200px;
+  height: 160px;
+  width: 250px;
   background: #000;
   float: left;
-  margin: 21px 0;
+  margin: 15px 0;
   color: #fff;
+  padding: 20px;
+  line-height: 23px;
 }
 /* #moduleOuter {
   background: rgb(255,255,255,0.9);
