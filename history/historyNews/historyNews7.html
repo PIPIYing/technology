@@ -7,6 +7,7 @@
   <title>“基建狂魔”再上新！这造型绝了，网友：科技与传统文化的碰撞</title>
   <link rel="stylesheet" href="../../assets/css/reset.css">
   <link rel="stylesheet" href="../../assets/css/newsDetails.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 
 <body>
@@ -104,7 +105,42 @@
         </div>
       </div>
     </div>
+    <div id="backTop">
+      <a href="javascript:;" @click="backtop">
+        <i class="el-icon-top"></i>
+      </a>
+    </div>
   </div>
 </body>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#newsDetails',
+    mounted() {
+      window.addEventListener("scroll", this.showbtn, true);
+    },
+    methods: {
+      // 显示回到顶部按钮
+      showbtn() {
+        let that = this;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        that.scrollTop = scrollTop
+      },
+      backtop() {
+        var timer = setInterval(function () {
+          let osTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let ispeed = Math.floor(-osTop / 5);
+          document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+          this.isTop = true;
+          if (osTop === 0) {
+            clearInterval(timer);
+          }
+        }, 30)
+      }
+    }
+  })
+</script>
 
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #nav {
 <<<<<<< Updated upstream
     background: #000;
@@ -27,6 +28,13 @@
     color:#fff;
   }
 =======
+=======
+/*导航栏通配*/
+/* body {
+background: #5C5C5C;
+} */
+#nav {
+>>>>>>> Stashed changes
   background: #3E444A;
   width: 100%;
   height: 50px;
@@ -35,11 +43,12 @@
 }
 #nav p,#nav li {
   color: #fff;
-  font-size: 16px;
-  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
 }
+/*#nav .logo {
+  width: 170px;
+  height: 170px;
+  margin: -60px 0 0 30px;
+}*/
 #nav p {
   /*float: left;*/
   margin-left: 5%;
@@ -47,8 +56,10 @@
   min-width: 140px;  /*防止因页面变小文字溢出*/
   height: 55px;
   font-family: STXingkai;  /*标题字体*/
-  font-size: 33px;
+  font-size: 18px;
   line-height: 55px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #nav ul {
   /*float: right;*/
@@ -220,7 +231,7 @@ body a {
   color: #858585;
 }
 .breadCrumb a:hover {
-  color: brown;
+  color: #077AAB;
   text-decoration: underline;
 }
 /*回到顶部的设置*/
@@ -281,7 +292,24 @@ body a {
   margin-left: 12px;
 }
 #epContentRight a:hover {
-  color: brown;
+  color: #077AAB;
   text-decoration: underline;
+}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+#backTop a{
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #077AAB;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 >>>>>>> Stashed changes
