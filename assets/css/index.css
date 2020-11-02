@@ -58,6 +58,9 @@ background: #5C5C5C;
   background: #000;
   transition-duration: 0.5s;
 }
+#indexImg img {
+  width: 100%;
+}
 #intro {
   width: 700px;
   height: 400px;
