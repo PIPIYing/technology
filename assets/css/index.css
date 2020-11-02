@@ -23,7 +23,7 @@ background: #5C5C5C;
   min-width: 140px;  /*防止因页面变小文字溢出*/
   height: 55px;
   font-family: STXingkai;  /*标题字体*/
-  font-size: 33px;
+  font-size: 18px;
   line-height: 55px;
 }
 #nav ul {

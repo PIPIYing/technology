@@ -1,56 +1,22 @@
-html, body {
-  width: 100%;
-}
-div {
-  display: block;
-}
-body, p {
-  padding: 0;
-  margin: 0;
-  font-family: '微软雅黑';
-  font-size: 14px;
-}
-body{
-  background: #ffff;
-  min-width: 1200px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-}
 /*导航栏通配*/
+/* body {
+background: #5C5C5C;
+} */
 #nav {
-    background: #000;
-    width: 100%;
-    height: 50px;
-  }
-  #nav p,#nav li {
-    display: flex;
-    color: #fff;
-    margin-top:15px;
-  }
-  #nav p {
-    float: left;
-    margin-left: 5%;
-  }
-  #nav ul {
-    float: right;
-    margin-right: 5%;
-  }
-  #nav li {
-    float: left;
-  }
-  #nav .line {
-    margin:15px 20px;
-  }
-  #nav a {
-    color:#fff;
-  }
+  background: #3E444A;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
 #nav p,#nav li {
   color: #fff;
-  font-size: 16px;
-  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
 }
+/*#nav .logo {
+  width: 170px;
+  height: 170px;
+  margin: -60px 0 0 30px;
+}*/
 #nav p {
   /*float: left;*/
   margin-left: 5%;
@@ -58,8 +24,10 @@ body{
   min-width: 140px;  /*防止因页面变小文字溢出*/
   height: 55px;
   font-family: STXingkai;  /*标题字体*/
-  font-size: 33px;
+  font-size: 18px;
   line-height: 55px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #nav ul {
   /*float: right;*/
@@ -234,7 +202,7 @@ body a {
   color: #858585;
 }
 .breadCrumb a:hover {
-  color: brown;
+  color: #077AAB;
   text-decoration: underline;
 }
 /*回到顶部的设置*/
@@ -298,6 +266,20 @@ body a {
   text-overflow: ellipsis;
 }
 #epContentRight a:hover {
-  color: brown;
+  color: #077AAB;
   text-decoration: underline;
+}
+#backTop a{
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #077AAB;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }

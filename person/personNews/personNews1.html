@@ -6,6 +6,7 @@
     <title>2020年“科学探索奖”获奖名单公布 最年轻获奖人仅30岁</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/newsDetails.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 <body>
   <div id="newsDetails">
@@ -102,10 +103,52 @@
             <li><a href="../personNews/personNews4.html">百万美元未来科学大奖揭晓：卢柯获物质科学奖</a></li>
             <li><a href="../personNews/personNews5.html">「青科会闭幕侧记」我所见到的当代青年科学家的模样</a></li>
             <li><a href="../personNews/personNews6.html">浙大27岁博导走红，90后科研人才辈出！</a></li>
+            <li><a href="../personNews/personNews7.html">“90后”科技人员：科研有成就科普有贡献</a></li>
+            <li><a href="../personNews/personNews8.html">“全国杰出科技人才”及“中国优秀青年科技人才”揭晓</a></li>
+            <li><a href="../personNews/personNews9.html">风行电视周坤：风浪来袭当借势而行</a></li>
+            <li><a href="../personNews/personNews10.html">HPE总裁兼CEO接受《财富》杂志专访</a></li>
+            <li><a href="../personNews/personNews11.html">联合通商科技CEO王振伦获2018年度信息化贡献人物奖</a></li>
+            <li><a href="../personNews/personNews12.html">SHAREit COO 王超：我看到的是通向成功的坦途</a></li>
           </ul>
         </div>
       </div>
     </div>
+    <div id="backTop">
+      <a href="javascript:;" @click="backtop">
+        <i class="el-icon-top"></i>
+      </a>
+    </div>
   </div>
 </body>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#newsDetails',
+    mounted() {
+      window.addEventListener("scroll", this.showbtn, true);
+    },
+    methods: {
+      // 显示回到顶部按钮
+      showbtn() {
+        let that = this;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        that.scrollTop = scrollTop
+      },
+      backtop() {
+        var timer = setInterval(function () {
+          let osTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let ispeed = Math.floor(-osTop / 5);
+          document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+          this.isTop = true;
+          if (osTop === 0) {
+            clearInterval(timer);
+          }
+        }, 30)
+      }
+    }
+  })
+</script>
+
 </html>

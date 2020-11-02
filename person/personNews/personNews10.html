@@ -6,6 +6,7 @@
     <title>HPE总裁兼CEO接受《财富》杂志专访</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/newsDetails.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 <body>
   <div id="newsDetails">
@@ -74,7 +75,7 @@
             <p>　　<strong>奈里</strong> <strong>：</strong> 他们一直在用存储的利润来换取服务器的增长，我们所做的正好相反。所以，如果你了解一下前面四个季度的情况就会发现，我们在存储领域的增长比他们快，而他们在整个计算领域的增长快于我们。因为HPE决定放弃对云计算公司销售低价、通用型服务器，而他们利用这一空间，拉动了针对这些<a href=http://www.newskj.org/news/kjxx/ target=_blank class=infotextkey>科技</a>公司的准系统服务器销售的增长。</p>
             <p>　　如今的云计算公司正在建立他们自己的硬件，从长远看他们正在挖一个越来越大的洞，这只是时间问题。所以我们决定撤离这一区域，之后其他人也会这样做。</p>
             <p>　　<strong>财富：</strong> 您感受到了来自Quanta等亚洲硬件承包制造商的竞争吗?</p>
-            <p>　　<strong>奈里</strong> <strong>：</strong> 没有，因为他们并不能提供服务。要专注于企业级市场，就需要有相应的服务能力和软件，这才能让服务奏效。我看到的是来自<a href=http://www.newskj.org/news/txit target=_blank class=infotextkey>通信</a>行业的潜在竞争者，比如华为。在这一市场的竞争是极其激烈的。未来，我们会专注于有附加值的新业务领域，不断增长有利润的市场份额，而不是仅仅为了份额而去争取份额。</p>
+            <p>　　<strong>奈里</strong> <strong>：</strong> 没有，因为他们并不能提供服务。要专注于企业级市场，就需要有相应的服务能力和软件，这才能让服务奏效。我看到的是来自<a href=http://www.newskj.org/news/txit target=_blank class=infotextkey>通信</a>行业的潜在竞争者，比如华为。在这一市场的竞争是极其激烈的。未来，我们会专注于有附加值的新业务领域，不断增长有利润的市场份额，而不是仅仅为了份额而去争取份额。</p> 
           </div>
         </div>
         <div class="btns">
@@ -115,10 +116,52 @@
             <li><a href="../personNews/personNews4.html">百万美元未来科学大奖揭晓：卢柯获物质科学奖</a></li>
             <li><a href="../personNews/personNews5.html">「青科会闭幕侧记」我所见到的当代青年科学家的模样</a></li>
             <li><a href="../personNews/personNews6.html">浙大27岁博导走红，90后科研人才辈出！</a></li>
+            <li><a href="../personNews/personNews7.html">“90后”科技人员：科研有成就科普有贡献</a></li>
+            <li><a href="../personNews/personNews8.html">“全国杰出科技人才”及“中国优秀青年科技人才”揭晓</a></li>
+            <li><a href="../personNews/personNews9.html">风行电视周坤：风浪来袭当借势而行</a></li>
+            <li><a href="../personNews/personNews10.html">HPE总裁兼CEO接受《财富》杂志专访</a></li>
+            <li><a href="../personNews/personNews11.html">联合通商科技CEO王振伦获2018年度信息化贡献人物奖</a></li>
+            <li><a href="../personNews/personNews12.html">SHAREit COO 王超：我看到的是通向成功的坦途</a></li>
           </ul>
         </div>
       </div>
     </div>
+    <div id="backTop">
+      <a href="javascript:;" @click="backtop">
+        <i class="el-icon-top"></i>
+      </a>
+    </div>
   </div>
 </body>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#newsDetails',
+    mounted() {
+      window.addEventListener("scroll", this.showbtn, true);
+    },
+    methods: {
+      // 显示回到顶部按钮
+      showbtn() {
+        let that = this;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        that.scrollTop = scrollTop
+      },
+      backtop() {
+        var timer = setInterval(function () {
+          let osTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let ispeed = Math.floor(-osTop / 5);
+          document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+          this.isTop = true;
+          if (osTop === 0) {
+            clearInterval(timer);
+          }
+        }, 30)
+      }
+    }
+  })
+</script>
+
 </html>

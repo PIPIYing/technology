@@ -6,6 +6,7 @@
     <title>联合通商科技CEO王振伦获2018年度信息化贡献人物奖</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/newsDetails.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 <body>
   <div id="newsDetails">
@@ -48,7 +49,7 @@
           </div>
           <div class="artical-con">
             <p>　　由上海市经信息委和上海市国资委等指导的&ldquo;新技术新生态&mdash;&mdash;上海首席信息官峰会暨颁奖典礼&rdquo; 于2018年6月29日在上海朱家角古镇隆重成功落幕。联合通商<a href=http://www.newskj.org/news/kjxx/ target=_blank class=infotextkey>科技</a>创始人CEO王振伦被峰会授予&ldquo;2018年度信息化贡献人物奖&rdquo;。</p>
-            <center><img alt="1530858086347880.jpg" height="437" src="../../assets/images/person/person11_1.jpg" width="600" /></center>
+            <center><img alt="1530858086347880.jpg" height="437" src="http://image.newskj.org/file/news/peoplefocus/2018-07-06/e63076f4589bcc1d2edcb1013a13d150.jpg" width="600" /></center>
             <p>　　聚焦供应链创新 引领未来数据分析</p>
             <p>　　王振伦先生拥有20多年的IT和供应链管理咨询服务经验，并于2010年创立联合通商<a href=http://www.newskj.org/news/kjxx/ target=_blank class=infotextkey>科技</a>(天津)有限公司①，着力面向中国的企业客户，提供从市场需求出发、基于销售预测和需求计划的供应链大数据分析服务，这与中国的供给侧改革所倡导的供应链创新发展充分贴合。</p>
             <p>　　据了解，由王振伦先生带领团队研发的 CPFR(协同规划预测补货)及供应链管理系统曾获得美国VICS Best Award第三方技术提供者荣誉。而其创立的联合通商<a href=http://www.newskj.org/news/kjxx/ target=_blank class=infotextkey>科技</a>所推出的SFS销售预测系统(Sales Forecast System)与RollingDemand滚需预测云平台则填补了国内的空白，打破了国外Sap、Oracle等巨头的多年垄断。</p>
@@ -104,10 +105,52 @@
             <li><a href="../personNews/personNews4.html">百万美元未来科学大奖揭晓：卢柯获物质科学奖</a></li>
             <li><a href="../personNews/personNews5.html">「青科会闭幕侧记」我所见到的当代青年科学家的模样</a></li>
             <li><a href="../personNews/personNews6.html">浙大27岁博导走红，90后科研人才辈出！</a></li>
+            <li><a href="../personNews/personNews7.html">“90后”科技人员：科研有成就科普有贡献</a></li>
+            <li><a href="../personNews/personNews8.html">“全国杰出科技人才”及“中国优秀青年科技人才”揭晓</a></li>
+            <li><a href="../personNews/personNews9.html">风行电视周坤：风浪来袭当借势而行</a></li>
+            <li><a href="../personNews/personNews10.html">HPE总裁兼CEO接受《财富》杂志专访</a></li>
+            <li><a href="../personNews/personNews11.html">联合通商科技CEO王振伦获2018年度信息化贡献人物奖</a></li>
+            <li><a href="../personNews/personNews12.html">SHAREit COO 王超：我看到的是通向成功的坦途</a></li>
           </ul>
         </div>
       </div>
     </div>
+    <div id="backTop">
+      <a href="javascript:;" @click="backtop">
+        <i class="el-icon-top"></i>
+      </a>
+    </div>
   </div>
 </body>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+  new Vue({
+    el: '#newsDetails',
+    mounted() {
+      window.addEventListener("scroll", this.showbtn, true);
+    },
+    methods: {
+      // 显示回到顶部按钮
+      showbtn() {
+        let that = this;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        that.scrollTop = scrollTop
+      },
+      backtop() {
+        var timer = setInterval(function () {
+          let osTop = document.documentElement.scrollTop || document.body.scrollTop;
+          let ispeed = Math.floor(-osTop / 5);
+          document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+          this.isTop = true;
+          if (osTop === 0) {
+            clearInterval(timer);
+          }
+        }, 30)
+      }
+    }
+  })
+</script>
+
 </html>
