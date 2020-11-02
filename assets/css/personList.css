@@ -118,6 +118,12 @@
 .el-card__body a:hover h6 {
   text-decoration: underline;
 }
+.el-card__body p {
+  line-height: 20px; 
+}
+.el-card__body h6 {
+  line-height: 19px;
+}
 #newsList {
   width: 100%;
 }
@@ -149,11 +155,14 @@
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  line-height: 21px;
 }
 #newsList p {
   width: 80%;
   height: 200px;
   margin: 0 auto;
+  line-height: 22px;
+  overflow: hidden;
 }
 #newsList li:hover {
   box-shadow:0 0 10px rgba(0,0,0,0.3);
