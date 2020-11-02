@@ -58,6 +58,7 @@
   height: 500px;
   margin: -3px auto 200px auto;
   position: relative;
+  line-height: 26px;
 }
 #boxList .shortList {
   width: 300px;
@@ -94,6 +95,7 @@
   width: 600px;
   height: 300px;
   background: #F3F3F3;
+  line-height: 20px;
 }
 #longList h6{
   margin: 20px;
@@ -108,4 +110,8 @@
 #longList a:hover {
   color: #045E8A;
 }
-
+.el-icon-chat-dot-square {
+  font-size: 20px;
+  margin-left: -20px;
+  margin-right: 10px;
+}

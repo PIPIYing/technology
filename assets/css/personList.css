@@ -52,6 +52,7 @@
 }
 #hotNewsBar {
   width: 100%;
+  line-height: 20px;
 }
 #hotNews {
   width: 80%;
@@ -120,6 +121,7 @@
 }
 #newsList {
   width: 100%;
+  line-height: 26px;
 }
 #newsList ul {
   width: 80%;

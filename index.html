@@ -25,10 +25,10 @@
           <a href="./person/personList.html">后起之秀</a>
         </li>
         <li>
-          <a href="./work/workList.html">科技成果</a>
+          <a href="./work/workList.html">累累硕果</a>
         </li>
         <li>
-          <a href="./history/historyList.html">传承文化</a>
+          <a href="./history/historyList.html">新旧交融</a>
         </li>
       </ul>
     </div>
@@ -60,7 +60,7 @@
               <a href="./work/workList.html">
                 <div class="link">
                   <img src="./assets/images/indexResult.png" alt="">
-                  <br>科技成果
+                  <br>累累硕果
                   <p>hhhhhhhhh</p>
                 </div>
               </a>
@@ -69,7 +69,7 @@
               <a href="./history/historyList.html">
                 <div class="link">
                   <img src="./assets/images/indexInherit.png" alt="">
-                  <br>传承文化
+                  <br>新旧交融
                   <p>hhhhhhhhh</p>
                 </div>
               </a>
@@ -83,8 +83,8 @@
       <h6>About Picture</h6>
       <div id="showImg">
         <el-carousel :interval="4000" type="card" height="300px">
-          <el-carousel-item v-for="item in 6" :key="item">
-            <h3 class="medium">{{ item }}</h3>
+          <el-carousel-item v-for="item in imagesBox" :key="item.id">
+            <img :src="item.url" alt="" />
           </el-carousel-item>
         </el-carousel>
       </div>
@@ -109,6 +109,18 @@
 <script>
   new Vue({
     el: '#index',
+    data() {
+      return {
+        imagesBox: [
+          {id: 0, url: "./assets/images/indexShow1.jpg"},
+          {id: 1, url: "./assets/images/indexShow2.jpg"},
+          {id: 2, url: "./assets/images/indexShow3.jpg"},
+          {id: 3, url: "./assets/images/indexShow4.jpg"},
+          {id: 4, url: "./assets/images/indexShow5.jpg"},
+          {id: 5, url: "./assets/images/indexShow6.jpg"}
+        ]
+      }
+    },
     mounted() {
       window.addEventListener("scroll", this.showbtn, true);
     },
